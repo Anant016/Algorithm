@@ -13,10 +13,10 @@ int gcd2(int a, int b){
         return a;
     }
     if(a>b){
-        return gcd(a-b,b);
+        return gcd2(a-b,b);
     }
     else{
-        return gcd(a,b-a);
+        return gcd2(a,b-a);
     }
 }
 
